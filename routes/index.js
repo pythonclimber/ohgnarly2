@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var homeCtrl = require('../controllers/homeController');
 
+
 router.post('/login', (req, res) => {
     homeCtrl.login(req, res);
 });
